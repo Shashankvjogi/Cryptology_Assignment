@@ -1,0 +1,254 @@
+1. # The following line won't run because of a syntax error 
+     print("hi)
+
+	=> print("hi")
+
+2. # Exercise 2
+''' The following lines won't run properly,
+    even if the syntax error in the line above is corrected,
+    because of a run-time error '''
+print(hello)
+	
+	=>hello = "Hello World!!"
+	  print(hello)
+
+3. #  Display a string (greeting message) directly 
+
+	=> print("Hello, shashank here... :)")
+
+
+4. # Display the contents of a string variable
+
+	=>message = "Hello"
+	  print(message)
+	
+
+5. # Display the string which contains single quotes 
+     Ex: Indian's
+	
+	=>print("Indian's")
+
+6. # Display the string which contains Double Quotes 
+     Ex: Students,"Welcome to SOIS". 
+
+	=>print("Students,\"Welcome to SOIS\".")
+
+6. Read two numbers in (user input) and store as num1 and num2, Calculate the sum, difference, product, Quotient, reminder, power
+
+7. check the value of num1 is integer or not? 
+
+	=> 
+		num1 = float(input("Enter the first number: "))
+		num2 = float(input("Enter the second number: "))
+
+		sum = num1 + num2
+		difference = num1 - num2
+		product = num1 * num2
+		quotient = num1 / num2 if num2 != 0 else "Undefined (division by zero)"
+		remainder = num1 % num2 if num2 != 0 else "Undefined (division by zero)"
+		power = num1 ** num2
+
+		print("Sum: {sum}")
+		print("Difference: {difference}")
+		print("Product: {product}")
+		print("Quotient: {quotient}")
+		print("Remainder: {remainder}")
+		print("Power: {power}")
+
+8. convert into integer 
+
+	=> int_sum = int(sum)
+	   int_diff = int(difference)
+	   int_prod = int(product)
+           int_Quot = int(quotient)
+           int_Rem = int(remainder)
+           int_pow = int(power)
+
+9. Find the datatype for the variable num1 and num2. 
+
+	=> type(num1) 
+	   type(num2)
+
+10. read the float value from the user and print the number rounded to 2 decimal places
+
+	=> 
+		value = float(input("Enter the value"))
+		rounded_value = round(value,2)
+		print(f"Rounded value: {rounded_value:.2f}")
+
+11. read the float value from the user and print the absolute value 
+
+	=>
+		value = float(input("Enter the value"))
+		absolute_value = abs(value)
+		print(f"Rounded value: {absolute_value}")
+
+12. Store different type values in the variabale 
+   String 
+   numeric 
+   complex 
+   list 
+   dictionary 
+   set 
+   tuple 
+
+13. Find the data type for the above variables 
+=>
+str = "Hello World"
+intgr = 11
+flt = 4.20
+cmplx = 2 +5j
+lst = [5, "shashank", 4.55]
+dct = {"emp_id" : 111, "emp_name" : "shashank", "city" : "Udupi"}
+st = {1, 2, "Hello"}
+tpl = ("Shashank", 2,34, 3.44)
+
+14. # Display the number of letters in the string
+    greeting = "Welcome to Python Programming"
+=>
+greeting = "Welcome to Python Programming"
+print(len(greeting))
+
+
+15. read the first name and last name from the user and combine first name and last name. combine name and greeting message
+=>
+first_name =  input("Enter the first name: ")
+Second_name =  input("Enter the second name: ")
+greeting_message = "Hello"
+
+print(greeting_message + " " + first_name+" "+Second_name )
+
+
+16. Display the string with space 
+    Ex: firstname lastname 
+=>
+first_name =  input("Enter the first name: ")
+Second_name =  input("Enter the second name: ")
+print(first_name+" "+Second_name )
+
+
+17. Display first two characters from the name 
+=>
+name = "shashank"
+
+print(name[0:2])
+
+
+18. Display last three characters from the name 
+=>
+name = "shashank"
+
+print( name[-3:])
+
+
+19. Display 3rd character to last character 
+=>
+name = "shashank"
+print( name[2:])
+
+20. Display 3rd to 5th character 
+=>
+name = "shashank"
+print( name[2:5])
+
+21. Create a list of food with two elements.
+=>
+ls = ["Dosa", "Idly"]
+print(ls)
+
+22. Add one more to the food list using .append()
+=>
+ls = ["Dosa", "Idly"]
+print(ls)
+ls.append("Rice")
+print(ls)
+
+23. Add two more food strings to food using .extend()
+=>
+ls = ["Dosa", "Idly"]
+print(ls)
+ls1 = ["rice", "apple"]
+ls.extend(ls1)
+print(ls)
+
+24. Count total number of items in the list 
+=>
+ls = ["Dosa", "Idly"]
+print(len(ls))
+
+25. Print the first two items in food using slicing notation
+=>
+ls = ["Dosa", "Idly","apple", "banana"]
+print(ls[0:2])
+
+26. Print the last item in food using index notation
+=>
+ls = ["Dosa", "Idly","apple", "banana"]
+print(ls[-1])
+
+
+27. Debug: Program is to check the given number is odd or even 
+
+number = input("Enter a number: ")
+x = str(number)/2
+if x == 0
+    print("The number is Even.")
+else
+    print("The number is Odd.")
+
+=>
+number = float(input("Enter a number: "))
+x = (number) % 2.0
+if x == 0:
+    print("The number is Even.")
+else:
+    print("The number is Odd.")
+
+28. Debug: Program is to convert centigrade to Fahrenheit
+c = input("Enter temperature in Centigrade: ")
+f = 9*(int(c)/5 +32
+print("Temperature in Fahrenheit is: ", f)
+
+=>
+c = input("Enter temperature in Centigrade: ")
+f = 9*(int(c)/5) +32
+print("Temperature in Fahrenheit is: ", f)
+
+29. Debug: 
+int = int(input("Enter the count of numbers: "))
+i = 0
+summ= 0
+for i in range(count):
+    x = int(input("Enter an integer: "))
+    sum = sum + x
+    avg = sum/count
+
+print("The average is: ", avg)
+
+=>
+count = int(input("Enter the count of numbers: "))
+i = 0
+sum= 0
+for i in range(count):
+    x = int(input("Enter an integer: "))
+    sum = sum + x
+    avg = sum/count
+
+print("The average is: ", avg)
+
+30. Prove : strings is not mutable 
+            lists are mutable 
+
+=>
+str = "Hello World!"
+# Below line throws error as string is immutable
+# str[0] = "h" 
+str1 = "h" +str[1:]
+print(str1)
+
+lst =[1,2,3,4,5,6,7]
+lst[0] = 11
+lst.append(22)
+print(lst)
+
+
